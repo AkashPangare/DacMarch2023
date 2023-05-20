@@ -1,17 +1,19 @@
 public class Assignment4_1_2 {
-    public static void main(String[] args) {
-        int n=25;
-        fib(n);
-        System.out.println(fib(n));
-    }
 
-    private static int fib(int n) {
-        if(n==0 || n==1){
-            return n;
-        }
-        int fib1 = fib(n-1);
-        int fib2 = fib(n-2);
-        int fibb = fib1 + fib2;
-        return fibb;
-    }
+static int n1=0,n2=1,n3=0;  
+
+ static void printFibonacci(int count){    
+    if(count>0){    
+         n3 = n1 + n2;    
+         n1 = n2;    
+         n2 = n3;    
+         System.out.print(" "+n3);   
+         printFibonacci(count-1);    
+     }    
+ }    
+ public static void main(String args[]){    
+  int count=10;    
+  System.out.print(n1+" "+n2);   
+  printFibonacci(count-2); 
+ }  
 }
