@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DSA Questions</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/2daf3c4ba0.js" crossorigin="anonymous"></script>
+  <link rel="shortcut icon" href="icon.png" type="image/png">
+  <style>
+    .hover:hover {
+
+      /* -webkit-transform: scaleX(-1); */
+      transform: scaleX(-1);
+    }
+  </style>
+  </head>
+  <body style="background-color: rgb(203, 231, 249);">
+    <nav
+      style="position: fixed; width: 100%; top: 0"
+      class="navbar navbar-expand-lg bg-info"
+    >
+      <div style="font-size: 20px" class="container-fluid">
+        <a class="navbar-brand" href="home.html"
+          >INTERVIEWINSIGHT
+          <i class="fa-brands fa-studiovinari fa-xl" style="color: #100e0e"></i
+        ></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse p-2" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="practice_1.html"
+                >Practice</a
+              >
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Resource
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="interview_guide.html"
+                    >Interview Guide</a
+                  >
+                </li>
+
+                <li>
+                  <a class="dropdown-item" href="blog.html">Blog</a>
+                </li>
+              </ul>
+            </li>
+            <!--<li class="nav-item">
+            <a class="nav-link" href="#">Freemock</a>
+          </li>-->
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Mock
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="mock_main.html"
+                    >Mock Assessment</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="mock-interview.html"
+                    >Mock Interview</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="home.html#aboutus">About Us</a>
+            </li>
+
+             <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact Us</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <!-- <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              /> -->
+
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="sign_in.html">Log In</a>
+              </li>
+            </ul>
+
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="sign_up.html">Sign Up</a>
+              </li>
+            </ul>
+            <!--<button class="btn btn-primary" type="submit">
+            Sign In
+          </button>-->
+          </form>
+        </div>
+      </div>
+    </nav>
+    <div class="row justify-content-center">
+      <div class="col-sm-12 col-md-9 " style="margin-top: 5%" >
+        <h1 class="text-center my-4">
+          Data Structures and Algorithm Interview Questions
+        </h1>
+        <h3>1. What are Data Structures?</h3>
+        <p>
+          A data structure is a mechanical or logical way that data is organized
+          within a program. The organization of data is what determines how a
+          program performs. There are many types of data structures, each with
+          its own uses. When designing code, we need to pay particular attention
+          to the way data is structured. If data isn't stored efficiently or
+          correctly structured, then the overall performance of the code will be
+          reduced.
+        </p>
+        <h3>2. Why Create Data Structures?</h3>
+        <p>
+          Data structures serve a number of important functions in a program.
+          They ensure that each line of code performs its function correctly and
+          efficiently, they help the programmer identify and fix problems with
+          his/her code, and they help to create a clear and organized code base.
+        </p>
+        <h3>3. What are some applications of Data structures?</h3>
+        <p>Following are some real-time applications of data structures:</p>
+        <ul>
+          <li>Decision Making</li>
+          <li>Genetics</li>
+          <li>Image Processing</li>
+          <li>Blockchain</li>
+          <li>Numerical and Statistical Analysis</li>
+          <li>Compiler Design</li>
+          <li>Database Design and many more</li>
+        </ul>
+        <h3>4. Explain the process behind storing a variable in memory.</h3>
+        <ul>
+          <li>
+            A variable is stored in memory based on the amount of memory that is
+            needed. Following are the steps followed to store a variable:
+            <ul>
+              <li>The required amount of memory is assigned first.</li>
+              <li>
+                Then, it is stored based on the data structure being used.
+              </li>
+            </ul>
+          </li>
+          <li>
+            Using concepts like dynamic allocation ensures high efficiency and
+            that the storage units can be accessed based on requirements in
+            real-time.
+          </li>
+        </ul>
+        <h3>
+          5. Can you explain the difference between file structure and storage
+          structure?
+        </h3>
+        <ul>
+          <li>
+            <strong>File Structure:</strong> Representation of data into
+            secondary or auxiliary memory say any device such as a hard disk or
+            pen drives that stores data which remains intact until manually
+            deleted is known as a file structure representation.
+          </li>
+          <li>
+            <strong>Storage Structure</strong>: In this type, data is stored in
+            the main memory i.e RAM, and is deleted once the function that uses
+            this data gets completely executed.
+          </li>
+        </ul>
+        <h3>6. Describe the types of Data Structures?</h3>
+        <ul>
+          <li>
+            <strong>Linear Data Structure:</strong> A data structure that
+            includes data elements arranged sequentially or linearly, where each
+            element is connected to its previous and next nearest elements, is
+            referred to as a linear data structure. Arrays and linked lists are
+            two examples of linear data structures.
+          </li>
+          <li>
+            <strong>Non-Linear Data Structure:</strong> Non-linear data
+            structures are data structures in which data elements are not
+            arranged linearly or sequentially. We cannot walk through all
+            elements in one pass in a non-linear data structure, as in a linear
+            data structure. Trees and graphs are two examples of non-linear data
+            structures.
+          </li>
+        </ul>
+        <h3>
+          7. What is a stack data structure? What are the applications of stack?
+        </h3>
+        <p>
+          A stack is a data structure that is used to represent the state of an
+          application at a particular point in time. The stack consists of a
+          series of items that are added to the top of the stack and then
+          removed from the top. It is a linear data structure that follows a
+          particular order in which operations are performed. LIFO (Last In
+          First Out) or FILO (First In Last Out) are two possible orders. A
+          stack consists of a sequence of items. The element that's added last
+          will come out first, a real-life example might be a stack of clothes
+          on top of each other. When we remove the cloth that was previously on
+          top, we can say that the cloth that was added last comes out first.
+        </p>
+        <p>Following are some applications for stack data structure:</p>
+        <ul>
+          <li>It acts as temporary storage during recursive operations</li>
+          <li>Redo and Undo operations in doc editors</li>
+          <li>Reversing a string</li>
+          <li>Parenthesis matching</li>
+          <li>Postfix to Infix Expressions</li>
+          <li>Function calls order</li>
+        </ul>
+        <h3>
+          8. What are different operations available in stack data structure?
+        </h3>
+        <p>
+          Some of the main operations provided in the stack data structure
+          are:&nbsp;
+        </p>
+        <ul>
+          <li>
+            <strong>push:</strong> This adds an item to the top of the stack.
+            The overflow condition occurs if the stack is full.
+          </li>
+          <li>
+            <strong>pop:</strong> This removes the top item of the stack.
+            Underflow condition occurs if the stack is empty.
+          </li>
+          <li>
+            <strong>top:</strong> This returns the top item from the stack.
+          </li>
+          <li>
+            <strong>isEmpty:</strong> This returns true if the stack is empty
+            else false.
+          </li>
+          <li>
+            <strong>size:</strong>&nbsp; This returns the size of the stack.
+          </li>
+        </ul>
+        <h3>9. What is a queue data structure?</h3>
+        <p>
+          A queue is a linear data structure that allows users to store items in
+          a list in a systematic manner. The items are added to the queue at the
+          rear end until they are full, at which point they are removed from the
+          queue from the front. Queues are commonly used in situations where the
+          users want to hold items for a long period of time, such as during a
+          checkout process. A good example of a queue is any queue of customers
+          for a resource where the first consumer is served first.
+        </p>
+        <h3>
+          10. What are different operations available in queue data structure?
+        </h3>
+        <ul>
+          <li>
+            <strong>enqueue:</strong> This adds an element to the rear end of
+            the queue.&nbsp; Overflow conditions occur if the queue is full.
+          </li>
+          <li>
+            <strong>dequeue:</strong> This removes an element from the front end
+            of the queue. Underflow conditions occur if the queue is empty.
+          </li>
+          <li>
+            <strong>isEmpty:</strong> This returns true if the queue is empty or
+            else false.
+          </li>
+          <li>
+            <strong>rear:</strong> This returns the rear end element without
+            removing it.
+          </li>
+          <li>
+            <strong>front:</strong> This returns the front-end element without
+            removing it.
+          </li>
+          <li><strong>size:</strong> This returns the size of the queue.</li>
+        </ul>
+        <h3>
+          11. What is array data structure? What are the applications of arrays?
+        </h3>
+        <p>
+          An array data structure is a data structure that is used to store data
+          in a way that is efficient and easy to access. It is similar to a list
+          in that it stores data in a sequence. However, an array data structure
+          differs from a list in that it can hold much more data than a list
+          can. An array data structure is created by combining several arrays
+          together. Each array is then given a unique identifier, and each
+          array’s data is stored in the order in which they are created.
+        </p>
+        <p>
+          Array data structures are commonly used in databases and other
+          computer systems to store large amounts of data efficiently. They are
+          also useful for storing information that is frequently accessed, such
+          as large amounts of text or images.
+        </p>
+        <h3>12. Elaborate on different types of array data structure</h3>
+        <p>There are several different types of arrays:</p>
+        <ul>
+          <li>
+            <strong>One-dimensional array:</strong> A one-dimensional array
+            stores its elements in contiguous memory locations, accessing them
+            using a single index value. It is a linear data structure holding
+            all the elements in a sequence.
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <strong>Two-dimensional array:</strong> A two-dimensional array is a
+            tabular array that includes rows and columns and stores data. An M ×
+            N two-dimensional array is created by grouping M rows and N columns
+            into N columns and rows.
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <strong>Three-dimensional array:</strong> A three-dimensional array
+            is a grid that has rows, columns, and depth as a third dimension. It
+            comprises a cube with rows, columns, and depth as a third dimension.
+            The three-dimensional array has three subscripts for a position in a
+            particular row, column, and depth. Depth (dimension or layer) is the
+            first index, row index is the second index, and column index is the
+            third index.
+          </li>
+        </ul>
+        <h3>
+          13. What is a linked list data structure? What are the applications
+          for the Linked list?
+        </h3>
+        <p>
+          A linked list can be thought of as a series of linked nodes (or items)
+          that are connected by links (or paths). Each link represents an entry
+          into the linked list, and each entry points to the next node in the
+          sequence. The order in which nodes are added to the list is determined
+          by the order in which they are created.
+        </p>
+        <p>Following are some applications of linked list data structure:</p>
+        <ul>
+          <li>
+            Stack, Queue, binary trees, and graphs are implemented using linked
+            lists.
+          </li>
+          <li>Dynamic management for Operating System memory.</li>
+          <li>Round robin scheduling for operating system tasks.</li>
+          <li>Forward and backward operation in the browser.</li>
+        </ul>
+        <h3>
+          14. Elaborate on different types of Linked List data structures?
+        </h3>
+        <p>Following are different types of linked lists:</p>
+        <p>
+          <strong>1. Singly Linked List: </strong>A singly linked list is a data
+          structure that is used to store multiple items. The items are linked
+          together using the key. The key is used to identify the item and is
+          usually a unique identifier. In a singly linked list, each item is
+          stored in a separate node. The node can be a single object or it can
+          be a collection of objects. When an item is added to the list, the
+          node is updated and the new item is added to the end of the list. When
+          an item is removed from the list, the node that contains the removed
+          item is deleted and its place is taken by another node. The key of a
+          singly linked list can be any type of data structure that can be used
+          to identify an object. For example, it could be an integer, a string,
+          or even another singly linked list. Singly-linked lists are useful for
+          storing many different types of data. For example, they are commonly
+          used to store lists of items such as grocery lists or patient records.
+          They are also useful for storing data that is time sensitive such as
+          stock market prices or flight schedules.
+        </p>
+        <p>
+          <strong>2. Doubly Linked List: </strong>A doubly linked list is a data
+          structure that allows for two-way data access such that each node in
+          the list points to the next node in the list and also points back to
+          its previous node. In a doubly linked list, each node can be accessed
+          by its address, and the contents of the node can be accessed by its
+          index. It's ideal for applications that need to access large amounts
+          of data in a fast manner. A disadvantage of a doubly linked list is
+          that it is more difficult to maintain than a single-linked list. In
+          addition, it is more difficult to add and remove nodes than in a
+          single-linked list.
+        </p>
+        <p>
+          <strong>3. Circular Linked List:</strong> A circular linked list is a
+          unidirectional linked list where each node points to its next node and
+          the last node points back to the first node, which makes it circular.
+        </p>
+        <p>
+          <strong>4. Doubly Circular Linked List: </strong>A doubly circular
+          linked list is a linked list where each node points to its next node
+          and its previous node and the last node points back to the first node
+          and first node’s previous points to the last node.
+        </p>
+        <h3>15. What is an asymptotic analysis of an algorithm?</h3>
+        <p>
+          Asymptotic analysis of an algorithm defines the run-time performance
+          as per its mathematical boundations. Asymptotic analysis helps us
+          articulate the best case(Omega Notation, Ω), average case(Theta
+          Notation, θ), and worst case(Big Oh Notation, Ο) performance of an
+          algorithm.
+        </p>
+        <h3>16. What is hashmap in data structure?</h3>
+        <p>
+          Hashmap is a data structure that uses an implementation of a hash
+          table data structure which allows access to data in constant time
+          (O(1)) complexity if you have the key.
+        </p>
+        <h3>
+          17. What is the requirement for an object to be used as key or value
+          in HashMap?
+        </h3>
+        <ul>
+          <li>
+            The key or value object that gets used in the hashmap must implement
+            equals() and hashcode() method.
+          </li>
+          <li>
+            The hash code is used when inserting the key object into the map and
+            the equals method is used when trying to retrieve a value from the
+            map.
+          </li>
+        </ul>
+        <h3>18. How does HashMap handle collisions in Java?</h3>
+        <ul>
+          <li>
+            The java.util.HashMap class in Java uses the approach of chaining to
+            handle collisions. In chaining, if the new values with the same key
+            are attempted to be pushed, then these values are stored in a linked
+            list stored in a bucket of the key as a chain along with the
+            existing value.
+          </li>
+          <li>
+            In the worst-case scenario, it can happen that all keys might have
+            the same hashcode, which will result in the hash table turning into
+            a linked list. In this case, searching a value will take O(n)
+            complexity as opposed to O(1) time due to the nature of the linked
+            list. Hence, care has to be taken while selecting hashing algorithm.
+          </li>
+        </ul>
+        <h3>
+          19. What is the time complexity of basic operations get() and put() in
+          HashMap class?
+        </h3>
+        <p>
+          The time complexity is O(1) <strong>assuming</strong> that the hash
+          function used in the hash map distributes elements uniformly among the
+          buckets.
+        </p>
+        <h3>
+          20. What is binary tree data structure? What are the applications for
+          binary trees?
+        </h3>
+        <p>
+          A binary tree is a data structure that is used to organize data in a
+          way that allows for efficient retrieval and manipulation. It is a data
+          structure that uses two nodes, called leaves and nodes, to represent
+          the data. The leaves represent the data and the nodes represent the
+          relationships between the leaves. Each node has two children, called
+          siblings, and each child has one parent. The parent is the node that
+          is closest to the root of the tree. When a node is deleted from the
+          tree, it is deleted from both its child and its parent.
+        </p>
+        <p>Following are some applications for binary tree data structure:</p>
+        <ul>
+          <li>
+            It's widely used in computer networks for storing routing table
+            information.
+          </li>
+          <li>Decision Trees.</li>
+          <li>Expression Evaluation.</li>
+          <li>Database indices.</li>
+        </ul>
+      </div>
+    </div>
+    <div
+    style="background-color: #3a3f42; color: white"
+    class="row justify-content-center"
+  >
+    <div class="col-sm-12 col-md-6" style="padding-top: 4%; padding-left: 3%">
+      <h4>INTERVIEWINSIGHT</h4>
+      <p>
+        Online face-to-face mock interviews with experts help you train &
+        prepare for job interviews in a no pressure, stress-free environment
+        simulating a real job interview. Stay ahead of the competition with
+        expert mentoring & feedback!
+      </p>
+      <div class="row">
+        <div class="col">
+          <h5>
+            <i class="fa-solid fa-phone-volume" style="color: #f8f80d"></i>
+            Call Us
+          </h5>
+          <p>+91 8500 99 0101</p>
+        </div>
+        <div class="col">
+          <h5>
+            <i
+              class="fa-sharp fa-solid fa-envelope"
+              style="color: #1264f3"
+            ></i>
+            Email Us
+          </h5>
+          <p>ask@interviewinsight.in</p>
+        </div>
+      </div>
+      <div>
+        <ul class="d-flex" style="list-style-type: none">
+          <li style="padding-right: 3%">
+            <a href=""><i class="fa-brands fa-facebook fa-xl"></i></a>
+          </li>
+          <li style="padding-right: 3%">
+            <a href=""><i class="fa-brands fa-twitter fa-xl"></i></a>
+          </li>
+          <li style="padding-right: 3%">
+            <a href=""
+              ><i
+                class="fa-brands fa-square-instagram fa-xl"
+                style="color: #ed2c7f"
+              ></i
+            ></a>
+          </li>
+          <li style="padding-right: 3%">
+            <a href=""
+              ><i
+                class="fa-brands fa-youtube fa-xl"
+                style="color: #f50529"
+              ></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="col-sm-12 col-md-6" style="padding-top: 4%; padding-left: 2%">
+      <h4>INTERVIEW TIPS IN YOUR INBOX</h4>
+      <p>
+        Handcrafted & curated material for every stage of career grooming &
+        industry insights, delivered to your inbox once a month. No spam.
+        Period.
+      </p>
+      <input type="email" value="" placeholder="Email" style="width: 40%" />
+      <div style="margin-top: 2%">
+        <a class="btn btn-warning" role="button">Subscribe</a>
+      </div>
+    </div>
+  </div>
+  <div
+    style="
+      background-color: black;
+      color: white;
+      padding-right: 10%;
+      text-align: center;
+      padding: 1%;
+    "
+  >
+    <h5 style="font-size: large">
+      Copyright
+      <i
+        class="fa-sharp fa-regular fa-copyright fa-xl"
+        style="color: #f9fafa"
+      ></i>
+      2023 All Rights Reserved | Privacy Policy
+    </h5>
+  </div>
+  </body>
+</html>

@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OS Questions</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/2daf3c4ba0.js" crossorigin="anonymous"></script>
+  <link rel="shortcut icon" href="icon.png" type="image/png">
+  <style>
+    .hover:hover {
+
+      /* -webkit-transform: scaleX(-1); */
+      transform: scaleX(-1);
+    }
+  </style>
+  </head>
+  <body style="background-color: rgb(203, 231, 249);">
+    <nav
+      style="position: fixed; width: 100%; top: 0"
+      class="navbar navbar-expand-lg bg-info"
+    >
+      <div style="font-size: 20px" class="container-fluid">
+        <a class="navbar-brand" href="home.html"
+          >INTERVIEWINSIGHT
+          <i class="fa-brands fa-studiovinari fa-xl" style="color: #100e0e"></i
+        ></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse p-2" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="practice_1.html"
+                >Practice</a
+              >
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Resource
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="interview_guide.html"
+                    >Interview Guide</a
+                  >
+                </li>
+
+                <li>
+                  <a class="dropdown-item" href="blog.html">Blog</a>
+                </li>
+              </ul>
+            </li>
+            <!--<li class="nav-item">
+            <a class="nav-link" href="#">Freemock</a>
+          </li>-->
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Mock
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="mock_main.html"
+                    >Mock Assessment</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="mock-interview.html"
+                    >Mock Interview</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="home.html#aboutus">About Us</a>
+            </li>
+
+             <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact Us</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <!-- <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              /> -->
+
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="sign_in.html">Log In</a>
+              </li>
+            </ul>
+
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="sign_up.html">Sign Up</a>
+              </li>
+            </ul>
+            <!--<button class="btn btn-primary" type="submit">
+            Sign In
+          </button>-->
+          </form>
+        </div>
+      </div>
+    </nav>
+    <div class="row justify-content-center">
+      <div class="col-sm-12 col-md-9" style="margin-top: 5%">
+        <h1 class="text-center my-4">Operating System Interview Questions</h1>
+        <h3>1. Why is the operating system important?</h3>
+        <p>
+          OS is the most essential and vital part of a computer without which it
+          is considered useless. It enables an interface or acts like a link for
+          interaction between computer software that is installed on OS and
+          users. It also helps to communicate with hardware and also maintains
+          balance among hardware and CPU. It also provides services to users and
+          a platform for programs to run on. It performs all common tasks
+          applications require.&nbsp;
+        </p>
+        <h3>
+          2. What's the main purpose of an OS? What are the different types of
+          OS?
+        </h3>
+        <p>
+          The main purpose of an OS is to execute user programs and make it
+          easier for users to understand and interact with computers as well as
+          run applications. It is specially designed to ensure that the computer
+          system performs better by managing all computational activities. It
+          also manages computer memory, processes, and operation of all hardware
+          and software.<br /><br /><strong>Types of OS:</strong>
+        </p>
+        <ul>
+          <li>
+            Batched OS (Example: Payroll System, Transactions Process, etc.)
+          </li>
+          <li>Multi-Programmed OS (Example: Windows O/S, UNIX O/S, etc.)</li>
+          <li>Timesharing OS (Example: Multics, etc.)</li>
+          <li>Distributed OS (LOCUS, etc.)</li>
+          <li>Real-Time OS (PSOS, VRTX, etc.)</li>
+        </ul>
+        <h3>3. What are the benefits of a multiprocessor system?</h3>
+        <p>
+          A Multiprocessor system is a type of system that includes two or more
+          CPUs. It involves the processing of different computer programs at the
+          same time mostly by a computer system with two or more CPUs that are
+          sharing single memory.&nbsp;<br /><br /><strong
+            ><u>Benefits:</u></strong
+          >
+        </p>
+        <ul>
+          <li>
+            Such systems are used widely nowadays to improve performance in
+            systems that are running multiple programs concurrently.&nbsp;
+          </li>
+          <li>
+            By increasing the number of processors, a greater number of tasks
+            can be completed in unit time.&nbsp;
+          </li>
+          <li>
+            One also gets a considerable increase in throughput and is
+            cost-effective also as all processors share the same resources.
+          </li>
+          <li>It simply improves the reliability of the computer system.</li>
+        </ul>
+        <h3>
+          4. What is RAID structure in OS? What are the different levels of RAID
+          configuration?
+        </h3>
+        <p>
+          RAID (Redundant Arrays of Independent Disks) is a method used to store
+          data on Multiple hard disks therefore it is considered as data storage
+          virtualization technology that combines multiple hard disks. It simply
+          balances data protection, system performance, storage space, etc. It
+          is used to improve the overall performance and reliability of data
+          storage. It also increases the storage capacity of the system and its
+          main purpose is to achieve data redundancy to reduce data
+          loss.&nbsp;<br /><br /><strong><u>Different levels of RAID</u></strong
+          ><br /><br />Nowadays, RAID is available in various schemes or RAID
+          level as given below:
+        </p>
+        <ul>
+          <li>
+            RAID 0 - Non-redundant striping: This level is used to increase the
+            performance of the server.
+          </li>
+          <li>
+            RAID 1 - Mirroring and duplexing: This level is also known as disk
+            mirroring and is considered the simplest way to implement fault
+            tolerance.
+          </li>
+          <li>
+            RAID 2 - Memory-style error-correcting codes: This level generally
+            uses dedicated hamming code parity I.e., a liner form of error
+            correction code.
+          </li>
+          <li>
+            RAID 3 - Bit-interleaved Parity: This level requires a dedicated
+            parity drive to store parity information.
+          </li>
+          <li>
+            RAID 4 - Block-interleaved Parity: This level is similar to RAID 5
+            but the only difference is that this level confines all parity data
+            to a single drive.
+          </li>
+          <li>
+            RAID 5 - Block-interleaved distributed Parity: This level provides
+            far better performance than disk mirroring and fault tolerance.
+          </li>
+          <li>
+            RAID 6 - P+Q Redundancy: This level generally provides fault
+            tolerance for two drive failures.
+          </li>
+        </ul>
+        <h3>5. What is GUI?</h3>
+        <p>
+          GUI (Graphical User Interface) is basically a type of user interface
+          that allows users to use graphics to interact with OS. GUI is created
+          because it is more user-friendly, less complex, and easier to
+          understand rather than a command-line interface. Its main goal is to
+          increase efficiency and ease of use. Instead of having to memorize
+          commands, users can just click on a button to simply execute the
+          procedure. Examples of GUI include Microsoft Windows, macOS, Apple’s
+          iOS, etc.
+        </p>
+        <h3>
+          7. What are the different kinds of operations that are possible on
+          semaphore?
+        </h3>
+        <p>
+          There are basically two atomic operations that are possible: 1.wait()
+          2.Signal()
+        </p>
+        <h3>8. What is a bootstrap program in OS?</h3>
+        <p>
+          It is generally a program that initializes OS during startup i.e.,
+          first code that is executed whenever computer system startups. OS is
+          loaded through a bootstrapping process or program commonly known as
+          booting. Overall OS only depends on the bootstrap program to perform
+          and work correctly. It is fully stored in boot blocks at a fixed
+          location on the disk. It also locates the kernel and loads it into the
+          main memory after which the program starts its execution.
+        </p>
+        <h3>9. Explain demand paging?</h3>
+        <p>
+          Demand paging is a method that loads pages into memory on demand. This
+          method is mostly used in virtual memory. In this, a page is only
+          brought into memory when a location on that particular page is
+          referenced during execution. The following steps are generally
+          followed:
+        </p>
+        <ul>
+          <li>Attempt to access the page.</li>
+          <li>
+            If the page is valid (in memory) then continue processing
+            instructions as normal.
+          </li>
+          <li>
+            If a page is invalid then a <strong>page-fault trap</strong> occurs.
+          </li>
+          <li>
+            Check if the memory reference is a valid reference to a location on
+            secondary memory. If not, the process is terminated (<strong
+              >illegal memory access</strong
+            >). Otherwise, we have to <strong>page in</strong> the required
+            page.
+          </li>
+          <li>
+            Schedule disk operation to read the desired page into main memory.
+          </li>
+          <li>
+            Restart the instruction that was interrupted by the operating system
+            trap.
+          </li>
+        </ul>
+        <h3>10. What do you mean by RTOS?</h3>
+        <p>
+          Real Time Operating System (RTOS) is an operating system that is used
+          for real-time applications i.e., for those applications where data
+          processing should be done in a fixed and small measure of time. It
+          performs much better on tasks that are needed to be executed within a
+          short time. It also takes care of execution, monitoring, and
+          all-controlling processes. It also occupies less memory and consumes
+          fewer resources.&nbsp;
+        </p>
+        <p><strong>Types of RTOS:</strong></p>
+        <ul>
+          <li>Hard Real-Time</li>
+          <li>Firm Real-Time</li>
+          <li>Soft Real-Time</li>
+        </ul>
+        <p>
+          RTOS is used in Air traffic control systems, Anti-lock Brake Systems,
+          and Heart pacemakers.
+        </p>
+        <h3>11. What do you mean by process synchronization?</h3>
+        <p>
+          Process synchronization is basically a way to coordinate processes
+          that use shared resources or data. It is very much essential to ensure
+          synchronized execution of cooperating processes so that will maintain
+          data consistency. Its main purpose is to share resources without any
+          interference using mutual exclusion. There are two types of process
+          synchronization:
+        </p>
+        <ul>
+          <li>Independent Process</li>
+          <li>Cooperative Process</li>
+        </ul>
+        <h3>12. What is IPC? What are the different IPC mechanisms?</h3>
+        <p>
+          IPC (Interprocess Communication) is a mechanism that requires the use
+          of resources like a memory that is shared between processes or
+          threads. With IPC, OS allows different processes to communicate with
+          each other. It is simply used for exchanging data between multiple
+          threads in one or more programs or processes. In this mechanism,
+          different processes can communicate with each other with the approval
+          of the OS.
+        </p>
+        <p><strong>Different IPC Mechanisms:</strong></p>
+        <ul>
+          <li>Pipes</li>
+          <li>Message Queuing</li>
+          <li>Semaphores</li>
+          <li>Socket</li>
+          <li>Shared Memory</li>
+          <li>Signals</li>
+        </ul>
+        <h3>13. What is different between main memory and secondary memory.</h3>
+        <p>
+          <strong>Main memory:</strong> Main memory in a computer is RAM (Random
+          Access Memory). It is also known as primary memory or read-write
+          memory or internal memory. The programs and data that the CPU requires
+          during the execution of a program are stored in this memory.<br /><strong
+            >Secondary memory:</strong
+          >
+          Secondary memory in a computer are storage devices that can store data
+          and programs. It is also known as external memory or additional memory
+          or backup memory or auxiliary memory. Such storage devices are capable
+          of storing high-volume data. Storage devices can be hard drives, USB
+          flash drives, CDs, etc.&nbsp;
+        </p>
+        <h3>14. What do you mean by overlays in OS?</h3>
+        <p>
+          Overlays is basically a programming method that divides processes into
+          pieces so that instructions that are important and need can be saved
+          in memory. It does not need any type of support from the OS. It can
+          run programs that are bigger in size than physical memory by only
+          keeping only important data and instructions that can be needed at any
+          given time.&nbsp;
+        </p>
+        <h3>15. Write top 10 examples of OS?</h3>
+        <p>Some of the top OS’s that are used mostly are given below:</p>
+        <ul>
+          <li>MS-Windows</li>
+          <li>Ubuntu</li>
+          <li>Mac OS</li>
+          <li>Fedora</li>
+          <li>Solaris</li>
+          <li>Free BSD</li>
+          <li>Chrome OS</li>
+          <li>CentOS</li>
+          <li>Debian</li>
+          <li>Android</li>
+        </ul>
+        <h3>16. What is virtual memory?</h3>
+        <p>
+          It is a memory management technique feature of OS that creates the
+          illusion to users of a very large (main) memory. It is simply space
+          where a greater number of programs can be stored by themselves in the
+          form of pages. It enables us to increase the use of physical memory by
+          using a disk and also allows us to have memory protection. It can be
+          managed in two common ways by OS i.e., paging and segmentation. It
+          acts as temporary storage that can be used along with RAM for computer
+          processes.&nbsp;
+        </p>
+        <h3>17. What is thread in OS?</h3>
+        <p>
+          Thread is a path of execution that is composed of a program counter,
+          thread id, stack, and set of registers within the process. It is a
+          basic unit of CPU utilization that makes communication more effective
+          and efficient, enables utilization of multiprocessor architectures to
+          a greater scale and greater efficiency, and reduces the time required
+          in context switching. It simply provides a way to improve and increase
+          the performance of applications through parallelism. Threads are
+          sometimes called <strong>lightweight processes</strong> because they
+          have their own stack but can access shared data.&nbsp;<br /><br />Multiple
+          threads running in a process share: Address space, Heap, Static data,
+          Code segments, File descriptors, Global variables, Child processes,
+          Pending alarms, Signals, and signal handlers.&nbsp;<br /><br />Each
+          thread has its own: Program counter, Registers, Stack, and State.
+        </p>
+        <h3>18. What is a process?</h3>
+        <p>
+          The process is basically a program that is currently under execution.
+          The main function of an OS is to manage and handle all of these
+          processes. When a program is loaded into the memory and it becomes a
+          process, it can be divided into four sections ─ stack, heap, text, and
+          data. There are two types of processes:
+        </p>
+        <ol>
+          <li>Operating System Processes</li>
+          <li>User Processes</li>
+        </ol>
+        <h3>19. What do you mean by FCFS?</h3>
+        <p>
+          <strong>FCFS</strong> (First Come First Serve) is a type of OS
+          scheduling algorithm that executes processes in the same order in
+          which processes arrive. In simple words, the process that arrives
+          first will be executed first. It is non-preemptive in nature. FCFS
+          scheduling may cause the problem of starvation if the burst time of
+          the first process is the longest among all the jobs. Burst time here
+          means the time that is required in milliseconds by the process for its
+          execution. It is also considered the easiest and simplest OS
+          scheduling algorithm as compared to others. Implementation of FCFS is
+          generally managed with help of the FIFO (First In First Out)
+          queue.&nbsp;
+        </p>
+        <h3>20. What is Reentrancy?</h3>
+        <p>
+          Reentrant is simply a function in which various clients can use and
+          shares a single copy of a program during a similar period. This
+          concept is generally associated with OS code and does not deal with
+          concurrency. It has two major functions:
+        </p>
+        <ul>
+          <li>Program code cannot change or modify itself.</li>
+          <li>
+            Local data for every client process needs to be stored in different
+            disks.
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div
+    style="background-color: #3a3f42; color: white"
+    class="row justify-content-center"
+  >
+    <div class="col-sm-12 col-md-6" style="padding-top: 4%; padding-left: 3%">
+      <h4>INTERVIEWINSIGHT</h4>
+      <p>
+        Online face-to-face mock interviews with experts help you train &
+        prepare for job interviews in a no pressure, stress-free environment
+        simulating a real job interview. Stay ahead of the competition with
+        expert mentoring & feedback!
+      </p>
+      <div class="row">
+        <div class="col">
+          <h5>
+            <i class="fa-solid fa-phone-volume" style="color: #f8f80d"></i>
+            Call Us
+          </h5>
+          <p>+91 8500 99 0101</p>
+        </div>
+        <div class="col">
+          <h5>
+            <i
+              class="fa-sharp fa-solid fa-envelope"
+              style="color: #1264f3"
+            ></i>
+            Email Us
+          </h5>
+          <p>ask@interviewinsight.in</p>
+        </div>
+      </div>
+      <div>
+        <ul class="d-flex" style="list-style-type: none">
+          <li style="padding-right: 3%">
+            <a href=""><i class="fa-brands fa-facebook fa-xl"></i></a>
+          </li>
+          <li style="padding-right: 3%">
+            <a href=""><i class="fa-brands fa-twitter fa-xl"></i></a>
+          </li>
+          <li style="padding-right: 3%">
+            <a href=""
+              ><i
+                class="fa-brands fa-square-instagram fa-xl"
+                style="color: #ed2c7f"
+              ></i
+            ></a>
+          </li>
+          <li style="padding-right: 3%">
+            <a href=""
+              ><i
+                class="fa-brands fa-youtube fa-xl"
+                style="color: #f50529"
+              ></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="col-sm-12 col-md-6" style="padding-top: 4%; padding-left: 2%">
+      <h4>INTERVIEW TIPS IN YOUR INBOX</h4>
+      <p>
+        Handcrafted & curated material for every stage of career grooming &
+        industry insights, delivered to your inbox once a month. No spam.
+        Period.
+      </p>
+      <input type="email" value="" placeholder="Email" style="width: 40%" />
+      <div style="margin-top: 2%">
+        <a class="btn btn-warning" role="button">Subscribe</a>
+      </div>
+    </div>
+  </div>
+  <div
+    style="
+      background-color: black;
+      color: white;
+      padding-right: 10%;
+      text-align: center;
+      padding: 1%;
+    "
+  >
+    <h5 style="font-size: large">
+      Copyright
+      <i
+        class="fa-sharp fa-regular fa-copyright fa-xl"
+        style="color: #f9fafa"
+      ></i>
+      2023 All Rights Reserved | Privacy Policy
+    </h5>
+  </div>
+  </body>
+</html>
